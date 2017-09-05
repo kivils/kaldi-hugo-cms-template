@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Инвестиции в МФК "Platiza"</title>
+    <meta name="description" content="Инвестиции в МФК Platiza">
+    <meta name="keywords" content="platiza">
+
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#6c6d6a">
+    <meta name="theme-color" content="#6c6d6a">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- build:css css/vendors.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+    <script>
+        CALCULATOR_DEFAULTS = {
+            // Сумма инвестиций
+            d: <?php echo Config::SUM_START; ?>,
+        dMin: <?php echo Config::SUM_MIN; ?>,
+        dMax: <?php echo Config::SUM_MAX; ?>,
+        dStep: <?php echo Config::SUM_STEP; ?>,
+
+        // Тип перечисления процентов
+        type: 'quarterly',
+
+            // Процентная ставка
+                p: <?php echo Config::PERCENT_START; ?>,
+        pMin: <?php echo Config::MIN_PERCENT; ?>,
+        pMax: <?php echo Config::MAX_PERCENT; ?>,
+        pStep: <?php echo Config::PERCENT_STEP; ?>,
+
+        // Процентные ставки в зависимости от периода и типа получения процентов
+        pMonthly1: <?php echo Config::MONTHLY_PERCENT_PERIOD1; ?>,
+        pMonthly2: <?php echo Config::MONTHLY_PERCENT_PERIOD2; ?>,
+        pQuarterly1: <?php echo Config::QUARTERLY_PERCENT_PERIOD1; ?>,
+        pQuarterly2: <?php echo Config::QUARTERLY_PERCENT_PERIOD2; ?>,
+
+        // Период
+        t: <?php echo Config::PERIOD_START; ?>,
+        tMin: <?php echo Config::PERIOD_MIN; ?>,
+        tMax: <?php echo Config::PERIOD_MAX; ?>,
+        tStep: <?php echo Config::PERIOD_STEP; ?>,
+        tBoundary: <?php echo Config::PERIOD_BOUNDARY; ?>,
+        T: 365 // Количество дней в году
+        };
+    </script>
+
+</head>
+<body>
