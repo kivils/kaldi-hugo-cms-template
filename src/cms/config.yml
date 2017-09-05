@@ -42,5 +42,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Type, name: type, widget: hidden, default: investors}
           - {label: Page, name: page, widget: hidden, default: "/investors.html"}
-          - {label: Image, name: image, widget: image}
+          - {label: Percents, name: percents, widget: object, fields: [{label: Percent max, name: percentMax, widget: number}, {label: Percent min, name: percentMin, widget: number}, {label: Percent start, name: percentStart, widget: number}, {label: Percent step, name: percentStep, widget: number}]}
+          - {label: Sums, name: sums, widget: object, fields: [{label: Sum max, name: sumMax, widget: number}, {label: Sum min, name: sumMin, widget: number}, {label: Sum start, name: sumStart, widget: number}, {label: Sum step, name: sumStep, widget: number}]}
+          - {label: Periods, name: periods, widget: object, fields: [{label: Period max, name: periodMax, widget: number}, {label: Period min, name: periodMin, widget: number}, {label: Period start, name: periodStart, widget: number}, {label: Period step, name: periodStep, widget: number}, {label: Period boundary, name: periodBoundary, widget: number}]}
+          - {label: Monthly Percents, name: monthlyPercents, widget: object, fields: [{label: Monthly Percents Period 1, name: monthlyPercentsPeriod1, widget: number}, {label: Monthly Percents Period 2, name: monthlyPercentsPeriod2, widget: number}]}
+          - {label: Quarterly Percents, name: quarterlyPercents, widget: object, fields: [{label: Quarterly Percents Period 1, name: quarterlyPercentsPeriod1, widget: number}, {label: Quarterly Percents Period 2, name: quarterlyPercentsPeriod2, widget: number}]}
           - {label: About, name: about, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: markdown}]}

@@ -2,7 +2,7 @@
 
 <div class="wrapper-wr">
 
-    {{ partial "investor-promo" . }}
+    {{ partial "investor-promo" .Params.percents }}
 
     {{ partial "investor-calculator" . }}
 
@@ -33,7 +33,7 @@
 
             <div class="c-features__item-part c-features__item-part_descr">
                 <ul class="c-features__list">
-                    <li class="c-features__list-item">Высокий процент (до&nbsp;{{ .Params.percentMax }}%)</li>
+                    <li class="c-features__list-item">Высокий процент (до&nbsp;{{ .Params.percents.percentMax }}%)</li>
                     <li class="c-features__list-item">Гибкие условия</li>
                 </ul>
             </div>
@@ -138,10 +138,10 @@
                 <h2 class="c-why__title o-pltz-h2">Выгодные условия</h2>
 
                 <p class="c-why__par">
-                    Доходность до {{ .Params.percentMax }}%, что в несколько раз выше процентов по банковским вкладам. Инвестиции в МФК "Platiza" надежно защищены и обеспечиваются собственным высокопрофессиональным опытом лидирующей компании на рынке.
+                    Доходность до {{ .Params.percents.percentMax }}%, что в несколько раз выше процентов по банковским вкладам. Инвестиции в МФК "Platiza" надежно защищены и обеспечиваются собственным высокопрофессиональным опытом лидирующей компании на рынке.
                 </p>
                 <p class="c-why__par">
-                    На выбор для инвесторов предлагается широкая инвестиционная линейка от 12 месяцев с доходностью до {{ .Params.percentMax }}% годовых.
+                    На выбор для инвесторов предлагается широкая инвестиционная линейка от 12 месяцев с доходностью до {{ .Params.percents.percentMax }}% годовых.
                 </p>
                 <p class="c-why__par">
                     Для инвесторов предусмотрена как ежемесячная, так и ежеквартальная выплата процентов.

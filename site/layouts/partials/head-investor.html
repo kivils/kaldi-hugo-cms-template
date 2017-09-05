@@ -26,34 +26,46 @@
 
     <script>
         CALCULATOR_DEFAULTS = {
+        {{ with .Params.sums }}
             // Сумма инвестиций
-            d: {{ .Params.sumStart }},
-        dMin: {{ .Params.sumMin }},
-        dMax: {{ .Params.sumMax }},
-        dStep: {{ .Params.sumStep }},
+            d: {{ .sumStart }},
+            dMin: {{ .sumMin }},
+            dMax: {{ .sumMax }},
+            dStep: {{ .sumStep }},
+        {{ end }}
 
-        // Тип перечисления процентов
-        type: 'quarterly',
+            // Тип перечисления процентов
+            type: 'quarterly',
 
+        {{ with .Params.percents }}
             // Процентная ставка
-                p: {{ .Params.percentStart }},
-        pMin: {{ .Params.percentMin }},
-        pMax: {{ .Params.percentMax }},
-        pStep: {{ .Params.percentStep }},
+            p: {{ .percentStart }},
+            pMin: {{ .percentMin }},
+            pMax: {{ .percentMax }},
+            pStep: {{ .percentStep }},
+        {{ end }}
 
+        {{ with .Params.monthlyPercents }}
         // Процентные ставки в зависимости от периода и типа получения процентов
-        pMonthly1: {{ .Params.MONTHLY_PERCENT_PERIOD1 }},
-        pMonthly2: {{ .Params.MONTHLY_PERCENT_PERIOD2 }},
-        pQuarterly1: {{ .Params.QUARTERLY_PERCENT_PERIOD1 }},
-        pQuarterly2: {{ .Params.QUARTERLY_PERCENT_PERIOD2 }},
+            pMonthly1: {{ .monthlyPercentsPeriod1 }},
+            pMonthly2: {{ .monthlyPercentsPeriod2 }},
+        {{ end }}
 
-        // Период
-        t: {{ .Params.PERIOD_START }},
-        tMin: {{ .Params.PERIOD_MIN }},
-        tMax: {{ .Params.PERIOD_MAX }},
-        tStep: {{ .Params.PERIOD_STEP }},
-        tBoundary: {{ .Params.PERIOD_BOUNDARY }},
-        T: 365 // Количество дней в году
+        {{ with .Params.quarterlyPercents }}
+        // Процентные ставки в зависимости от периода и типа получения процентов
+            pQuarterly1: {{ .quarterlyPercentsPeriod1 }},
+            pQuarterly2: {{ .quarterlyPercentsPeriod2 }},
+        {{ end }}
+
+        {{ with .Params.periods }}
+            // Период
+            t: {{ .periodStart }},
+            tMin: {{ .periodMin }},
+            tMax: {{ .periodMax }},
+            tStep: {{ .periodStep }},
+            tBoundary: {{ .periodBoundary }},
+            T: 365 // Количество дней в году
+        {{ end }}
         };
     </script>
 

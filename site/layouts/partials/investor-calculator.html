@@ -6,10 +6,11 @@
             <div class="c-calculator__block">
                 <div class="o-calc-label">Сумма инвестиций:</div>
 
+                {{ with .Params.sums }}
                 <div class="c-calc-slider js-calc-slider">
                     <div class="c-calc-slider__line">
-                        <input type="hidden" name="sumInvest" value="{{ .Params.sumStart }}" class="js-invest-sum-input">
-                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-sum-value">{{ .Params.sumStart }}</span></div>
+                        <input type="hidden" name="sumInvest" value="{{ .sumStart }}" class="js-invest-sum-input">
+                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-sum-value">{{ .sumStart }}</span></div>
                         <div class="c-calc-slider__part c-calc-slider__part_info">рублей</div>
                     </div>
 
@@ -17,15 +18,17 @@
                         <div class="o-slider__item js-slider-sum"></div>
                     </div>
                 </div>
+                {{ end }}
             </div>
 
             <div class="c-calculator__block">
                 <div class="o-calc-label">Срок инвестиций:</div>
 
+                {{ with .Params.periods }}
                 <div class="c-calc-slider js-calc-slider">
                     <div class="c-calc-slider__line">
-                        <input type="hidden" name="periodInvest" value="{{ .Params.PERIOD_START }}" class="js-invest-period-input">
-                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-period-value">{{ .Params.PERIOD_START }}</span></div>
+                        <input type="hidden" name="periodInvest" value="{{ .periodStart }}" class="js-invest-period-input">
+                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-period-value">{{ .periodStart }}</span></div>
                         <div class="c-calc-slider__part c-calc-slider__part_info">месяцев</div>
                     </div>
 
@@ -33,6 +36,7 @@
                         <div class="o-slider__item js-slider-period"></div>
                     </div>
                 </div>
+                {{ end }}
             </div>
 
         </div>
@@ -58,10 +62,11 @@
             <div class="c-calculator__block">
                 <div class="o-calc-label">Ставка:</div>
 
+                {{ with .Params.percents }}
                 <div class="c-calc-slider js-calc-slider">
                     <div class="c-calc-slider__line">
-                        <input type="hidden" name="percentInvest" value="{{ .Params.percentStart }}" class="js-invest-percent-input">
-                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-percent-value">{{ .Params.percentStart }}</span> %</div>
+                        <input type="hidden" name="percentInvest" value="{{ .percentStart }}" class="js-invest-percent-input">
+                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-percent-value">{{ .percentStart }}</span> %</div>
                         <div class="c-calc-slider__part c-calc-slider__part_info">годовых</div>
                     </div>
 
@@ -69,6 +74,7 @@
                         <div class="o-slider__item js-slider-percent"></div>
                     </div>
                 </div>
+                {{ end }}
             </div>
 
         </div>

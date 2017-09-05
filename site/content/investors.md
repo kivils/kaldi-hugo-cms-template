@@ -1,23 +1,31 @@
 ---
 title: Our Coffee
-percentMax: 20
-percentMin: 18
-percentStart: 18
-percentStep: 1
-sumStart: 2600000
-sumMin: 1500000
-sumMax: 7000000
-sumStep: 100000
-MONTHLY_PERCENT_PERIOD1: 18
-MONTHLY_PERCENT_PERIOD2: 18
-QUARTERLY_PERCENT_PERIOD1: 20
-QUARTERLY_PERCENT_PERIOD2: 20
-PERIOD_START: 25
-PERIOD_MIN: 12
-PERIOD_MAX: 36
-PERIOD_STEP: 1
-PERIOD_BOUNDARY: 24
 type: investors
 page: /investors.html
+percents:
+  percentMax: 20
+  percentMin: 18
+  percentStart: 18
+  percentStep: 1
+sums:
+  sumMin: 1500000
+  sumMax: 7000000
+  sumStart: 2600000
+  sumStep: 100000
+periods:
+  periodMin: 12
+  periodMax: 36
+  periodStart: 25
+  periodStep: 1
+  periodBoundary: 24
+monthlyPercents:
+  monthlyPercentsPeriod1: 18
+  monthlyPercentsPeriod2: 18
+quarterlyPercents:
+  quarterlyPercentsPeriod1: 20
+  quarterlyPercentsPeriod2: 20
+about:
+  heading:
+  text:
 
 ---
