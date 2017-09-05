@@ -2,135 +2,9 @@
 
 <div class="wrapper-wr">
 
-    <section class="c-promo">
-        <div class="c-promo__logo">
-            <a href="https://platiza.ru" class="c-promo__logo-link" target="_blank">
-                <svg class="c-logo" width="86px" height="36px" viewBox="0 0 86 36" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g fill="#FFFFFF">
-                            <g>
-                                <path d="M0.169633028,26.7302919 C1.81408716,24.4796108 7.99326606,24.3974919 9.97955046,26.4886054 L9.97955046,32.4198486 C9.0171789,33.3542919 7.09578899,33.8197622 5.17262385,33.8197622 C4.43827064,33.8197622 3.69070183,33.7070919 3.00684404,33.4986811 L3.00684404,35.813773 L0.169633028,35.813773 L0.169633028,26.7302919 Z M7.35576147,27.9838703 L7.35576147,27.9838703 C6.03637156,27.5008865 4.32426147,27.5008865 3.00684404,27.9838703 L3.00684404,31.2162811 C4.3558211,31.6817514 6.00441743,31.5702486 7.35576147,31.1038054 L7.35576147,27.9838703 L7.35576147,27.9838703 Z"></path>
-                                <polyline points="13.0765367 35.813773 13.0765367 25.3313514 16.059711 25.3313514 16.059711 33.2081514 20.6218532 33.2081514 20.6218532 35.813773 13.0765367 35.813773"></polyline>
-                                <path d="M33.3707615,35.813773 L30.5353257,35.813773 L30.5353257,33.5302054 L26.184633,33.5302054 L26.184633,35.813773 L23.3470275,35.813773 L23.3470275,26.7302919 C25.0591376,24.3974919 31.6586514,24.3974919 33.3707615,26.7302919 L33.3707615,35.813773 Z M30.5353257,30.9101838 L30.5353257,28.1128865 C29.2139633,27.6131676 27.5038257,27.6131676 26.184633,28.1128865 L26.184633,30.9101838 L30.5353257,30.9101838 L30.5353257,30.9101838 Z"></path>
-                                <polyline points="35.6992706 27.936 35.6992706 25.3313514 45.7200459 25.3313514 45.7200459 27.936 42.3467156 27.936 42.3467156 35.813773 39.0704312 35.813773 39.0704312 27.936 35.6992706 27.936"></polyline>
-                                <polygon points="48.329633 35.813773 51.1625046 35.813773 51.1625046 25.3313514 48.329633 25.3313514"></polygon>
-                                <polyline points="54.3419404 28.1286486 54.3419404 25.3313514 63.8755138 25.3313514 63.8755138 27.7589189 58.5133349 33.0168649 64.1202982 33.0168649 64.1202982 35.813773 54.0993257 35.813773 54.0993257 33.3865946 59.6555963 28.1286486 54.3419404 28.1286486"></polyline>
-                                <path d="M77.078289,35.813773 L74.241078,35.813773 L74.241078,33.5302054 L69.8899908,33.5302054 L69.8899908,35.813773 L67.0549495,35.813773 L67.0549495,26.7302919 C68.7648899,24.3974919 75.3661789,24.3974919 77.078289,26.7302919 L77.078289,35.813773 Z M74.241078,30.9101838 L74.241078,28.1128865 C72.9195183,27.6131676 71.2113532,27.6131676 69.8899908,28.1128865 L69.8899908,30.9101838 L74.241078,30.9101838 L74.241078,30.9101838 Z"></path>
-                                <path d="M74.1564587,19.6489946 C76.0143349,19.6489946 78.2540826,18.1640432 79.159844,16.3313514 L85.5859771,3.33321081 C86.4917385,1.50265946 85.7191193,0.015372973 83.8610459,0.015372973 L68.7268211,0.015372973 C66.868945,0.015372973 64.6270275,1.50265946 63.7214633,3.33321081 L57.295133,16.3313514 C56.5309954,17.876627 55.7055138,19.2823784 54.0738807,19.6489946 L74.1564587,19.6489946"></path>
-                                <path d="M44.7996881,10.7381189 C43.5373028,10.7381189 43.0349128,11.7492324 43.6785321,12.9926919 L45.9522064,17.3955892 C46.5964174,18.6400216 48.1396835,19.6489946 49.4018716,19.6489946 C50.0308945,19.6489946 50.7445367,19.6990054 51.4390459,19.6489946 C53.1111147,19.5312649 54.289078,17.876627 55.0534128,16.3313514 L57.3477982,11.6900757 C56.6388899,11.1150486 55.7646881,10.7381189 54.9942385,10.7381189 L44.7996881,10.7381189"></path>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </a>
-        </div>
-        <div class="c-promo__text">
-            Инвестируйте выгодно:
-            <div class="c-promo__text-feat">доход до <?php echo Config::MAX_PERCENT; ?>%</div>
-        </div>
-    </section>
+    {{ partial "investor-promo" . }}
 
-    <section class="c-calculator js-calculator-invest">
-
-        <div class="c-calculator__row">
-            <div class="c-calculator__col4">
-
-                <div class="c-calculator__block">
-                    <div class="o-calc-label">Сумма инвестиций:</div>
-
-                    <div class="c-calc-slider js-calc-slider">
-                        <div class="c-calc-slider__line">
-                            <input type="hidden" name="sumInvest" value="<?php echo Config::SUM_START; ?>" class="js-invest-sum-input">
-                            <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-sum-value"><?php echo Config::SUM_START; ?></span></div>
-                            <div class="c-calc-slider__part c-calc-slider__part_info">рублей</div>
-                        </div>
-
-                        <div class="c-calc-slider__slider o-slider">
-                            <div class="o-slider__item js-slider-sum"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="c-calculator__block">
-                    <div class="o-calc-label">Срок инвестиций:</div>
-
-                    <div class="c-calc-slider js-calc-slider">
-                        <div class="c-calc-slider__line">
-                            <input type="hidden" name="periodInvest" value="<?php echo Config::PERIOD_START; ?>" class="js-invest-period-input">
-                            <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-period-value"><?php echo Config::PERIOD_START; ?></span></div>
-                            <div class="c-calc-slider__part c-calc-slider__part_info">месяцев</div>
-                        </div>
-
-                        <div class="c-calc-slider__slider o-slider">
-                            <div class="o-slider__item js-slider-period"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="c-calculator__col4">
-
-                <div class="c-calculator__block">
-                    <div class="o-calc-label">Перечисление процентов:</div>
-
-                    <div class="c-calc-radio-group">
-
-                        <div class="c-calc-radio">
-                            <input type="radio" class="c-calc-radio__control js-percents" name="loanType[]" id="loanType1" value="quarterly" checked>
-                            <label for="loanType1" class="c-calc-radio__label">Ежеквартально</label>
-                        </div>
-
-                        <div class="c-calc-radio">
-                            <input type="radio" class="c-calc-radio__control js-percents" name="loanType[]" id="loanType2" value="monthly">
-                            <label for="loanType2" class="c-calc-radio__label">Ежемесячно</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="c-calculator__block">
-                    <div class="o-calc-label">Ставка:</div>
-
-                    <div class="c-calc-slider js-calc-slider">
-                        <div class="c-calc-slider__line">
-                            <input type="hidden" name="percentInvest" value="<?php echo Config::PERCENT_START; ?>" class="js-invest-percent-input">
-                            <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-percent-value"><?php echo Config::PERCENT_START; ?></span> %</div>
-                            <div class="c-calc-slider__part c-calc-slider__part_info">годовых</div>
-                        </div>
-
-                        <div class="c-calc-slider__slider o-slider">
-                            <div class="o-slider__item js-slider-percent"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="c-calculator__col4">
-
-                <div class="c-calculator__block">
-                    <div class="o-calc-label">Прибыль:</div>
-
-                    <div class="c-calc-table js-calc-table-quarterly">
-                        <div class="c-calc-table__part c-calc-table__part_info">В квартал</div>
-                        <div class="c-calc-table__part c-calc-table__part_sum"><span class="js-calc-sum-quarterly">0</span> ₽</div>
-                    </div>
-
-                    <div class="c-calc-table js-calc-table-monthly is-hidden">
-                        <div class="c-calc-table__part c-calc-table__part_info">В месяц</div>
-                        <div class="c-calc-table__part c-calc-table__part_sum"><span class="js-calc-sum-monthly">0</span> ₽</div>
-                    </div>
-
-                    <div class="c-calc-table c-calc-table_feat">
-                        <div class="c-calc-table__part c-calc-table__part_info">Итого</div>
-                        <div class="c-calc-table__part c-calc-table__part_sum"><span class="js-calc-sum-total">0</span> ₽</div>
-                    </div>
-
-                    <a href="javascript: void(0);" class="o-pltz-btn o-pltz-btn_t1 o-pltz-btn_full js-modal-link" onclick="yaCounter13635434.reachGoal('INVEST_CALC'); return true;">Инвестировать</a>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
+    {{ partial "investor-calculator" . }}
 
     <section class="c-features">
         <h1 class="c-features__title o-pltz-h1">Инвестиции в МФК "Platiza" - это выгодно, безопасно и удобно!</h1>
@@ -159,7 +33,7 @@
 
             <div class="c-features__item-part c-features__item-part_descr">
                 <ul class="c-features__list">
-                    <li class="c-features__list-item">Высокий процент (до&nbsp;<?php echo Config::MAX_PERCENT; ?>%)</li>
+                    <li class="c-features__list-item">Высокий процент (до&nbsp;{{ .Params.percentMax }}%)</li>
                     <li class="c-features__list-item">Гибкие условия</li>
                 </ul>
             </div>
@@ -238,7 +112,7 @@
     <section class="c-why">
         <div class="c-why__item c-why__item_rtl">
             <div class="c-why__item-part c-why__item-part_icon">
-                <img src="images/icon_shield.png" alt="Зачем вкладываться в МФО?" class="c-why__icon">
+                <img src="../img/investors/icon_shield.png" alt="Зачем вкладываться в МФО?" class="c-why__icon">
             </div>
             <div class="c-why__item-part c-why__item-part_info">
                 <h2 class="c-why__title o-pltz-h2">Зачем вкладываться в МФО?</h2>
@@ -258,16 +132,16 @@
 
         <div class="c-why__item">
             <div class="c-why__item-part c-why__item-part_icon">
-                <img src="images/icon_graph.png" alt="Выгодные условия" class="c-why__icon">
+                <img src="../img/investors/icon_graph.png" alt="Выгодные условия" class="c-why__icon">
             </div>
             <div class="c-why__item-part c-why__item-part_info">
                 <h2 class="c-why__title o-pltz-h2">Выгодные условия</h2>
 
                 <p class="c-why__par">
-                    Доходность до <?php echo Config::MAX_PERCENT; ?>%, что в несколько раз выше процентов по банковским вкладам. Инвестиции в МФК "Platiza" надежно защищены и обеспечиваются собственным высокопрофессиональным опытом лидирующей компании на рынке.
+                    Доходность до {{ .Params.percentMax }}%, что в несколько раз выше процентов по банковским вкладам. Инвестиции в МФК "Platiza" надежно защищены и обеспечиваются собственным высокопрофессиональным опытом лидирующей компании на рынке.
                 </p>
                 <p class="c-why__par">
-                    На выбор для инвесторов предлагается широкая инвестиционная линейка от 12 месяцев с доходностью до <?php echo Config::MAX_PERCENT; ?>% годовых.
+                    На выбор для инвесторов предлагается широкая инвестиционная линейка от 12 месяцев с доходностью до {{ .Params.percentMax }}% годовых.
                 </p>
                 <p class="c-why__par">
                     Для инвесторов предусмотрена как ежемесячная, так и ежеквартальная выплата процентов.
@@ -345,15 +219,15 @@
 
             <div class="c-stats__items c-stats__items_xs">
                 <div class="c-stats__item">
-                    <img class="c-stats__logo" src="images/logo_finsight.png" alt="FinSight" />
+                    <img class="c-stats__logo" src="../img/investors/logo_finsight.png" alt="FinSight" />
                 </div>
 
                 <div class="c-stats__item">
-                    <img class="c-stats__logo" src="images/logo_flint-capital.png" alt="Flint Capital" />
+                    <img class="c-stats__logo" src="../img/investors/logo_flint-capital.png" alt="Flint Capital" />
                 </div>
 
                 <div class="c-stats__item">
-                    <img class="c-stats__logo" src="images/logo_prostor-capital.png" alt="Prostor Capital" />
+                    <img class="c-stats__logo" src="../img/investors/logo_prostor-capital.png" alt="Prostor Capital" />
                 </div>
             </div>
 
@@ -368,15 +242,15 @@
 
                     <div class="c-stats__items c-stats__items_xs c-stats__items_eq-height">
                         <div class="c-stats__item">
-                            <img class="c-stats__logo" src="images/logo_yandex-dengi.png" alt="Yandex.Деньги" />
+                            <img class="c-stats__logo" src="../img/investors/logo_yandex-dengi.png" alt="Yandex.Деньги" />
                         </div>
 
                         <div class="c-stats__item">
-                            <img class="c-stats__logo" src="images/logo_qiwi-wallet.png" alt="Flint Qiwi Wallet" />
+                            <img class="c-stats__logo" src="../img/investors/logo_qiwi-wallet.png" alt="Flint Qiwi Wallet" />
                         </div>
 
                         <div class="c-stats__item">
-                            <img class="c-stats__logo" src="images/logo_banks.png" alt="Крупнейшие российские банки" />
+                            <img class="c-stats__logo" src="../img/investors/logo_banks.png" alt="Крупнейшие российские банки" />
                         </div>
                     </div>
                 </div>
@@ -386,15 +260,15 @@
 
                     <div class="c-stats__items c-stats__items_xs c-stats__items_eq-height">
                         <div class="c-stats__item">
-                            <img class="c-stats__logo" src="images/logo_nbki.png" alt="Национальное Бюро Кредитных Историй" />
+                            <img class="c-stats__logo" src="../img/investors/logo_nbki.png" alt="Национальное Бюро Кредитных Историй" />
                         </div>
 
                         <div class="c-stats__item">
-                            <img class="c-stats__logo" src="images/logo_okb.png" alt="Объединенное Кредитное Бюро" />
+                            <img class="c-stats__logo" src="../img/investors/logo_okb.png" alt="Объединенное Кредитное Бюро" />
                         </div>
 
                         <div class="c-stats__item">
-                            <img class="c-stats__logo" src="images/logo_equifax.png" alt="Equifax" />
+                            <img class="c-stats__logo" src="../img/investors/logo_equifax.png" alt="Equifax" />
                         </div>
                     </div>
                 </div>
@@ -403,24 +277,7 @@
 
     </section>
 
-    <section class="c-about">
-        <h2 class="c-about__title o-pltz-h2">O Platiza</h2>
-
-        <p class="c-about__par">
-            Platiza (Платиза) — онлайн-сервис мгновенной финансовой помощи, который не просто выдаёт краткосрочные займы, но и помогает заёмщикам улучшать кредитную историю. Сервис начал свою работу в 2011 году и сразу стал одним из лидеров в сфере онлайн-микрокредитования в России.<br >
-            Акционеры Platiza — международные инвестиционные фонды FinSight Ventures, Flint Capital и Prostor Capital. Партнеры — популярные платежные системы Яндекс.Деньги, QIWI Visa Wallet, поставщик услуг информационной безопасности Deiteriy, бюро кредитных историй НБКИ, ОКБ и Equifax, а также крупнейшие российские банки.
-        </p>
-        <p class="c-about__par">
-            Моментальные онлайн-займы выдаются на сумму от 1000 до 15 000 рублей и срок от 5 до 45 дней. Процентная ставка составляет от 0,5% в день, средняя ставка – 2% в день. Получение занимает всего 3 минуты. Сервисом пользуются десятки тысяч клиентов по всей территории России. Стремительно набирает популярность пользователей уникальное мобильное приложение собственной разработки "Balance. Финансовое равновесие", позволяющее управлять личными финансами напрямую со своего смартфона.
-        </p>
-        <p class="c-about__par">
-            Надежность сервиса гарантируется инновационными разработками, такими как собственная скоринговая система, использующая алгоритмы искусственного интеллекта и нейронные сети, а также разработанный в компании уникальный способ подтверждения личности клиента — видеоидентификация.
-        </p>
-
-        <p class="c-about__par">
-            <a href="https://platiza.ru/about" class="o-pltz-btn o-pltz-btn_t2" target="_blank">Подробнее о компании</a>
-        </p>
-    </section>
+    {{ partial "4-up" .Params.about }}
 
     <section class="c-juri">
         <p class="c-juri__par">

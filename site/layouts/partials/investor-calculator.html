@@ -1,0 +1,101 @@
+<section class="c-calculator js-calculator-invest">
+
+    <div class="c-calculator__row">
+        <div class="c-calculator__col4">
+
+            <div class="c-calculator__block">
+                <div class="o-calc-label">Сумма инвестиций:</div>
+
+                <div class="c-calc-slider js-calc-slider">
+                    <div class="c-calc-slider__line">
+                        <input type="hidden" name="sumInvest" value="{{ .Params.sumStart }}" class="js-invest-sum-input">
+                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-sum-value">{{ .Params.sumStart }}</span></div>
+                        <div class="c-calc-slider__part c-calc-slider__part_info">рублей</div>
+                    </div>
+
+                    <div class="c-calc-slider__slider o-slider">
+                        <div class="o-slider__item js-slider-sum"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-calculator__block">
+                <div class="o-calc-label">Срок инвестиций:</div>
+
+                <div class="c-calc-slider js-calc-slider">
+                    <div class="c-calc-slider__line">
+                        <input type="hidden" name="periodInvest" value="{{ .Params.PERIOD_START }}" class="js-invest-period-input">
+                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-period-value">{{ .Params.PERIOD_START }}</span></div>
+                        <div class="c-calc-slider__part c-calc-slider__part_info">месяцев</div>
+                    </div>
+
+                    <div class="c-calc-slider__slider o-slider">
+                        <div class="o-slider__item js-slider-period"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="c-calculator__col4">
+
+            <div class="c-calculator__block">
+                <div class="o-calc-label">Перечисление процентов:</div>
+
+                <div class="c-calc-radio-group">
+
+                    <div class="c-calc-radio">
+                        <input type="radio" class="c-calc-radio__control js-percents" name="loanType[]" id="loanType1" value="quarterly" checked>
+                        <label for="loanType1" class="c-calc-radio__label">Ежеквартально</label>
+                    </div>
+
+                    <div class="c-calc-radio">
+                        <input type="radio" class="c-calc-radio__control js-percents" name="loanType[]" id="loanType2" value="monthly">
+                        <label for="loanType2" class="c-calc-radio__label">Ежемесячно</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-calculator__block">
+                <div class="o-calc-label">Ставка:</div>
+
+                <div class="c-calc-slider js-calc-slider">
+                    <div class="c-calc-slider__line">
+                        <input type="hidden" name="percentInvest" value="{{ .Params.percentStart }}" class="js-invest-percent-input">
+                        <div class="c-calc-slider__part c-calc-slider__part_input"><span class="js-invest-percent-value">{{ .Params.percentStart }}</span> %</div>
+                        <div class="c-calc-slider__part c-calc-slider__part_info">годовых</div>
+                    </div>
+
+                    <div class="c-calc-slider__slider o-slider">
+                        <div class="o-slider__item js-slider-percent"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="c-calculator__col4">
+
+            <div class="c-calculator__block">
+                <div class="o-calc-label">Прибыль:</div>
+
+                <div class="c-calc-table js-calc-table-quarterly">
+                    <div class="c-calc-table__part c-calc-table__part_info">В квартал</div>
+                    <div class="c-calc-table__part c-calc-table__part_sum"><span class="js-calc-sum-quarterly">0</span> ₽</div>
+                </div>
+
+                <div class="c-calc-table js-calc-table-monthly is-hidden">
+                    <div class="c-calc-table__part c-calc-table__part_info">В месяц</div>
+                    <div class="c-calc-table__part c-calc-table__part_sum"><span class="js-calc-sum-monthly">0</span> ₽</div>
+                </div>
+
+                <div class="c-calc-table c-calc-table_feat">
+                    <div class="c-calc-table__part c-calc-table__part_info">Итого</div>
+                    <div class="c-calc-table__part c-calc-table__part_sum"><span class="js-calc-sum-total">0</span> ₽</div>
+                </div>
+
+                <a href="javascript: void(0);" class="o-pltz-btn o-pltz-btn_t1 o-pltz-btn_full js-modal-link" onclick="yaCounter13635434.reachGoal('INVEST_CALC'); return true;">Инвестировать</a>
+            </div>
+
+        </div>
+    </div>
+
+</section>

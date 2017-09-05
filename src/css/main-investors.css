@@ -481,7 +481,7 @@ body.is-modal-opened {
 .c-promo {
   padding: 20px 15px;
   position: relative;
-  background: #59595a url(../images/bg_investors.png) no-repeat 50% 55%;
+  background: #59595a url(../img/investors/bg_investors.png) no-repeat 50% 55%;
   background-size: cover;
   box-sizing: border-box;
 }
@@ -1455,7 +1455,7 @@ body.is-modal-opened {
   width: 46px;
   height: 46px;
   margin: 0 auto;
-  background: transparent url(../images/loader_1.gif) no-repeat 50% 50%;
+  background: transparent url(../img/investors/loader_1.gif) no-repeat 50% 50%;
 }
 
 .c-form-modal.is-sending .c-form-modal__loader {

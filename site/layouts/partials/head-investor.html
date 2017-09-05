@@ -27,32 +27,32 @@
     <script>
         CALCULATOR_DEFAULTS = {
             // Сумма инвестиций
-            d: <?php echo Config::SUM_START; ?>,
-        dMin: <?php echo Config::SUM_MIN; ?>,
-        dMax: <?php echo Config::SUM_MAX; ?>,
-        dStep: <?php echo Config::SUM_STEP; ?>,
+            d: {{ .Params.sumStart }},
+        dMin: {{ .Params.sumMin }},
+        dMax: {{ .Params.sumMax }},
+        dStep: {{ .Params.sumStep }},
 
         // Тип перечисления процентов
         type: 'quarterly',
 
             // Процентная ставка
-                p: <?php echo Config::PERCENT_START; ?>,
-        pMin: <?php echo Config::MIN_PERCENT; ?>,
-        pMax: <?php echo Config::MAX_PERCENT; ?>,
-        pStep: <?php echo Config::PERCENT_STEP; ?>,
+                p: {{ .Params.percentStart }},
+        pMin: {{ .Params.percentMin }},
+        pMax: {{ .Params.percentMax }},
+        pStep: {{ .Params.percentStep }},
 
         // Процентные ставки в зависимости от периода и типа получения процентов
-        pMonthly1: <?php echo Config::MONTHLY_PERCENT_PERIOD1; ?>,
-        pMonthly2: <?php echo Config::MONTHLY_PERCENT_PERIOD2; ?>,
-        pQuarterly1: <?php echo Config::QUARTERLY_PERCENT_PERIOD1; ?>,
-        pQuarterly2: <?php echo Config::QUARTERLY_PERCENT_PERIOD2; ?>,
+        pMonthly1: {{ .Params.MONTHLY_PERCENT_PERIOD1 }},
+        pMonthly2: {{ .Params.MONTHLY_PERCENT_PERIOD2 }},
+        pQuarterly1: {{ .Params.QUARTERLY_PERCENT_PERIOD1 }},
+        pQuarterly2: {{ .Params.QUARTERLY_PERCENT_PERIOD2 }},
 
         // Период
-        t: <?php echo Config::PERIOD_START; ?>,
-        tMin: <?php echo Config::PERIOD_MIN; ?>,
-        tMax: <?php echo Config::PERIOD_MAX; ?>,
-        tStep: <?php echo Config::PERIOD_STEP; ?>,
-        tBoundary: <?php echo Config::PERIOD_BOUNDARY; ?>,
+        t: {{ .Params.PERIOD_START }},
+        tMin: {{ .Params.PERIOD_MIN }},
+        tMax: {{ .Params.PERIOD_MAX }},
+        tStep: {{ .Params.PERIOD_STEP }},
+        tBoundary: {{ .Params.PERIOD_BOUNDARY }},
         T: 365 // Количество дней в году
         };
     </script>
