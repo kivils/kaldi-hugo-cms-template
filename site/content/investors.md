@@ -5,7 +5,7 @@ page: /investors.html
 percents:
   percentMax: 20
   percentMin: '16'
-  percentStart: 18
+  percentStart: '16'
   percentStep: 1
 sums:
   sumMax: 7000000
@@ -80,6 +80,7 @@ aboutText: >-
   интеллекта и нейронные сети, а также разработанный в компании уникальный
   способ подтверждения личности клиента — видеоидентификация.
 ---
+
 
 
 
