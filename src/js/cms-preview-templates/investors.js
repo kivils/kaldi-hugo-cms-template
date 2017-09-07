@@ -3,7 +3,7 @@ import format from "date-fns/format";
 
 export default class PostPreview extends React.Component {
   render() {
-      const {entry, getAsset, widgetFor} = this.props;
+      const {entry, getAsset, widgetFor, widgetsFor} = this.props;
 
       return <div>
         <h2>{ entry.getIn(["data", "about", "heading"]) }</h2>
