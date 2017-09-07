@@ -7,7 +7,7 @@ export default class PostPreview extends React.Component {
 
       return <div>
         <h2>{ entry.getIn(["data", "about", "heading"]) }</h2>
-        <div>{ entry.getIn(["data", "about", "text"]) }</div>
+        <div>{ widgetsFor("text") }</div>
     </div>;
   }
 }

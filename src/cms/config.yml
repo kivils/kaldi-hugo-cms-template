@@ -39,7 +39,6 @@ collections: # A list of collections the CMS should be able to edit
         label: "Investors Page"
         name: "investors"
         fields:
-          - {label: Title, name: title, widget: string}
           - {label: Type, name: type, widget: hidden, default: investors}
           - {label: Page, name: page, widget: hidden, default: "/investors.html"}
           - {label: Percents, name: percents, widget: object, fields: [{label: Percent min, name: percentMin, widget: number}, {label: Percent max, name: percentMax, widget: number}, {label: Percent start, name: percentStart, widget: number}, {label: Percent step, name: percentStep, widget: number}]}
