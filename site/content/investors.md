@@ -1,5 +1,4 @@
 ---
-title: Our Coffee
 type: investors
 page: /investors.html
 percents:
